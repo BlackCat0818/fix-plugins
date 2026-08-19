@@ -1,12 +1,12 @@
 // LiteLoader-AIDS automatic generated
-/// <reference path="c:\LSE-API/dts/helperlib/src/index.d.ts"/> 
+/// <reference path="d:\LLSE-API/dts/helperlib/src/index.d.ts"/> 
 
 
 const pluginName = "B-Grave";
 ll.registerPlugin(
     /* name */ pluginName,
     /* introduction */ `${pluginName} - 全新重构版本墓碑插件`,
-    /* version */[2, 0, 0, Version.Release],
+    /* version */[2, 0, 1, Version.Release],
     /* otherInformation */{ "发布地址": "https://www.minebbs.com/resources/authors/forget.132107/" }
 );
 
@@ -477,7 +477,7 @@ function calculateTeleportCost(player, graveX, graveY, graveZ, graveDimid) {
 function registerCommands() {
     try {
         const command = mc.newCommand("grave", "墓碑系统", PermType.Any);
-        command.setEnum("ListAction", ["back", "reload", "gg", "query", "clean"]);
+        command.setEnum("ListAction", ["back", "reload", "gg", "query", "clean", "drop"]);
         command.mandatory("action", ParamType.Enum, "ListAction", 1);
         command.overload(["ListAction"]);
         command.setCallback((cmd, ori, out, res) => {
@@ -678,6 +678,25 @@ function registerCommands() {
                             out.success(`${index + 1}. 位置: ${grave.pos} 归属: ${grave.ownerName}`);
                         });
                     };
+                    break;
+
+                case "drop":
+                    // 仅管理员可执行（控制台或 OP）
+                    if (ori.type !== 0) return out.error(`此命令仅限玩家执行!`);
+
+                    // 玩家执行：只对该玩家的墓碑执行掉落
+                    const dropped = cleanAllLoadedGraves("玩家触发掉落", player.xuid);
+
+                    if (dropped.length === 0) {
+                        player.sendText("§a没有可掉落的墓碑");
+                        break;
+                    }
+
+                    player.sendText(`§a已强制使 ${dropped.length} 座你的墓碑掉落：`);
+                    dropped.forEach((grave, index) => {
+                        player.sendText(`§a${index + 1}. 位置: ${grave.pos} 归属: ${grave.ownerName}`);
+                    });
+
                     break;
             };
         });
@@ -1064,12 +1083,15 @@ function getAllGravesInfo() {
 }
 
 // 修改清理函数：返回清理的墓碑信息
-function cleanAllLoadedGraves(reason = "") {
+function cleanAllLoadedGraves(reason = "", ownerXUID = null) {
     try {
         const graves = getAllGravesInfo();
         const cleanedGraves = [];
 
         for (const grave of graves) {
+            // 如果传入 ownerXUID，则只清理该玩家的墓碑
+            if (ownerXUID && grave.ownerXUID !== ownerXUID) continue;
+
             if (cleanSingleGrave(grave.entity, reason)) {
                 cleanedGraves.push({
                     ownerName: grave.ownerName,

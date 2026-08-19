@@ -107,5 +107,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - 修复钥匙持有者正常破坏墓碑的权限验证
 
+## [2.0.1] - 2026-8-19
+
+### Added
+- 注册 `/grave drop` 命令（玩家使自己的所有墓碑掉落其中物品）
+
 <!-- 下载链接 -->
 [1.9.6-beta]: https://www.minebbs.com/resources/b-grave-b-tombstone.12439/
