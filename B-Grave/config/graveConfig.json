@@ -1,0 +1,85 @@
+{
+    "whiteListItems": [
+        "minecraft:elytra",
+        "minecraft:firework_rocket",
+        "ed:ball",
+        "ed:ball_1",
+        "minecraft:bundle",
+        "minecraft:white_bundle",
+        "minecraft:light_gray_bundle",
+        "minecraft:gray_bundle",
+        "minecraft:black_bundle",
+        "minecraft:brown_bundle",
+        "minecraft:red_bundle",
+        "minecraft:orange_bundle",
+        "minecraft:yellow_bundle",
+        "minecraft:lime_bundle",
+        "minecraft:green_bundle",
+        "minecraft:cyan_bundle",
+        "minecraft:light_blue_bundle",
+        "minecraft:blue_bundle",
+        "minecraft:purple_bundle",
+        "minecraft:magenta_bundle",
+        "minecraft:pink_bundle"
+    ],
+    "admins": [
+        "Steve",
+        "Alex"
+    ],
+    "searchAvailableSpaceMode": "sphere",
+    "searchAvailableSpaceRadius": 8,
+    "effectiveDuration": 180,
+    "allowChangeDimTp": true,
+    "tpGraveConsumesKey": false,
+    "dropGraveBlock": true,
+    "economicConfig": {
+        "type": "llmoney",
+        "scoreboardName": "money",
+        "tpGraveNeedMoney": true,
+        "calculationMethod": "distance",
+        "needMoneyRandomRange": [
+            10,
+            100
+        ],
+        "deathCountScoreboard": "deathcount",
+        "doubleThePriceWhenAllowChangeDimTp": true
+    },
+    "dimensionConfig": {
+        "over_world": {
+            "dimid": 0,
+            "dim": "主世界",
+            "height": {
+                "minY": -64,
+                "maxY": 320
+            },
+            "generateGrave": true,
+            "allowUseKeyTpToGrave": true,
+            "dropXpOrb": true,
+            "dropExpPercent": 30
+        },
+        "the_nether": {
+            "dimid": 1,
+            "dim": "下界",
+            "height": {
+                "minY": 0,
+                "maxY": 128
+            },
+            "generateGrave": true,
+            "allowUseKeyTpToGrave": true,
+            "dropXpOrb": true,
+            "dropExpPercent": 30
+        },
+        "the_end": {
+            "dimid": 2,
+            "dim": "末地",
+            "height": {
+                "minY": 0,
+                "maxY": 256
+            },
+            "generateGrave": true,
+            "allowUseKeyTpToGrave": true,
+            "dropXpOrb": true,
+            "dropExpPercent": 30
+        }
+    }
+}

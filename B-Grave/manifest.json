@@ -1,0 +1,16 @@
+{
+    "entry": "B-Grave.js",
+    "name": "B-Grave",
+    "type": "lse-quickjs",
+    "version": "2.0.0",
+    "author": "BlackCat",
+    "description": "B-Grave - 全新重构版本墓碑插件",
+    "extraInfo": {
+        "发布地址": "https://www.minebbs.com/resources/authors/forget.132107/"
+    },
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

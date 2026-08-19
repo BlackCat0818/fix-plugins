@@ -1,0 +1,148 @@
+容器对象 API
+在脚本引擎中，使用「容器对象」来操作拥有格子、可以储存和放置物品的容器的相关信息。
+此处的 容器 是一种宽泛的概念，除了箱子、桶这些传统的容器之外，如玩家物品栏、羊驼携带的箱子等这些也统统可以作为「容器」处理，获取并使用容器对应的API
+
+获取一个容器对象
+从事件或API获取
+通过注册事件监听函数，或者调用某些返回容器对象的函数，来获取到BDS给出的容器对象
+详见 事件监听文档 - EventAPI
+
+通过实体获取
+通过玩家对象的各个成员函数，来获取一个玩家物品栏、盔甲栏、末影箱对应的容器对象
+详见 玩家对象 API
+
+通过方块获取
+对于可以容纳物品的方块，通过方块对象的成员函数，来他所对应的对应的容器对象
+详见 方块对象 API
+
+注意：不要长期保存一个容器对象
+当容器对象对应的实体 / 方块被销毁时，对应的容器对象将同时释放。因此，如果有长期操作某个容器的需要，请通过上述途径获取实时的容器对象
+
+容器信息对象 - 属性
+每一个容器信息对象都包含一些固定的对象属性。对于某个特定的容器对象ct，有以下这些属性
+
+属性	含义	类型
+ct.size	容器拥有的格子总数	Integer
+ct.type	容器的类型名	String
+容器对象 - 函数
+每一个容器对象都包含一些可以执行的成员函数（成员方法）。对于某个特定的容器对象ct，可以通过以下这些函数对这个容器进行一些操作
+
+注意！在修改完玩家物品栏对应的物品之后，不要忘记使用玩家对象的成员函数pl.refreshItems，刷新客户端显示的玩家物品栏
+
+放入物品对象到容器中
+ct.addItem(item[, amount])
+
+参数：
+item : Item
+待增加的物品对象
+
+amount: Integer
+
+（可选）欲添加物品数量，若提供此参数，item对象本身的count属性将被忽略。 - 返回值：是否成功增加 - 返回值类型：Boolean
+
+放入物品对象到容器的第一个空格子
+ct.addItemToFirstEmptySlot(item)
+
+参数：
+item : Item
+待增加的物品对象
+返回值：是否成功增加
+返回值类型：Boolean
+和上述函数不同，此函数将不会堆叠至容器内现有的物品堆中
+
+检查容器中是否（有空间）可以放入此物品
+ct.hasRoomFor(item)
+
+参数：
+item : Item
+待放入的物品对象
+返回值：是否可以放入
+返回值类型：Boolean
+减少容器中的某个物品对象
+ct.removeItem(index,count)
+
+参数：
+index : Integer
+减少的物品对象所在的格子序号
+count : Integer
+减少的数量。如果大于等于此格子物品堆叠的数量，则物品堆将被整个清除
+返回值：是否成功减少
+返回值类型：Boolean
+获取容器某个格子的物品对象
+ct.getItem(index)
+
+参数：
+index : Integer
+待获取的格子序号
+返回值：格子位置的物品对象
+返回值类型：Item
+此处获取的物品对象为引用。也就是说，修改此处返回的物品对象，或使用其API，就相当于直接操作容器中对应的物品
+
+设置容器某个格子的物品对象
+ct.setItem(index,item)
+
+参数：
+index : Integer
+待设置的格子序号
+item : Item
+待设置的物品对象
+返回值：是否设置成功
+返回值类型：Boolean
+获取容器所有格子的物品对象列表
+ct.getAllItems()
+
+返回值：容器中所有的物品对象
+返回值类型：Array<Item,Item,...>
+此处获取的物品对象均为引用。也就是说，修改此处返回的物品对象，或使用其API，就相当于直接操作容器中对应的物品
+
+清空容器
+ct.removeAllItems()
+
+返回值：是否成功清空
+返回值类型：Boolean
+判断容器是否为空
+ct.isEmpty()
+
+返回值：当前容器是否为空
+返回值类型：Boolean
+
+
+// LiteLoader-AIDS automatic generated
+/// <reference path="d:\LLSE-API/dts/helperlib/src/index.d.ts"/> 
+
+
+/*
+item.isFullStack    物品是否已堆叠到最大堆叠数    Boolean
+item.isStackable    物品是否可堆叠    Boolean
+
+生成新的物品对象
+通过此函数，根据给出的信息生成一个新的物品对象
+
+mc.newItem(name,count)
+
+参数：
+name : String
+物品的标准类型名，如minecraft:bread
+count : Integer
+物品堆叠数量，由于 unsigned __int8，最大值为 64
+返回值：生成的物品对象
+返回值类型：Item
+如返回值为 Null 则表示生成失败
+从现有的物品对象克隆
+通过此函数，根据某个现有的物品对象克隆一个新的物品对象
+新的物品对象与旧的对象并无关联关系
+对于一个已经存在的物品对象item，有函数：
+
+item.clone()
+
+返回值：生成的新物品对象
+返回值类型：Item
+如返回值为 Null 则表示生成失败
+*/
+let getItemMaxCount = ll.imports("GMLIB_API", "getItemMaxCount"); // 获取物品对象最大堆叠数量 getItemMaxCount(item)
+
+获取玩家物品栏的容器对象
+pl.getInventory()
+
+返回值：玩家物品栏对应的容器对象
+返回值类型：Container

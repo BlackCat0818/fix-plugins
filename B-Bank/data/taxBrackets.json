@@ -1,0 +1,47 @@
+[
+    {
+        "upperLimit": 3000,
+        "rate": 0.03,
+        "quickDeduction": 0
+    },
+    {
+        "upperLimit": 12000,
+        "rate": 0.05,
+        "quickDeduction": 500
+    },
+    {
+        "upperLimit": 25000,
+        "rate": 0.08,
+        "quickDeduction": 1600
+    },
+    {
+        "upperLimit": 35000,
+        "rate": 0.12,
+        "quickDeduction": 3000
+    },
+    {
+        "upperLimit": 55000,
+        "rate": 0.18,
+        "quickDeduction": 5000
+    },
+    {
+        "upperLimit": 80000,
+        "rate": 0.2,
+        "quickDeduction": 7500
+    },
+    {
+        "upperLimit": 100000,
+        "rate": 0.25,
+        "quickDeduction": 16000
+    },
+    {
+        "upperLimit": 500000,
+        "rate": 0.3,
+        "quickDeduction": 25000
+    },
+    {
+        "upperLimit": "Infinity",
+        "rate": 0.35,
+        "quickDeduction": 28000
+    }
+]

@@ -1,0 +1,12 @@
+{
+    "Economic": {
+        "Enable": true,
+        "EconomicType": "llmoney",
+        "ScoreboardName": "moeny",
+        "StoreCreationCost": 500
+    },
+    "banItems": [
+        "minecraft:clock",
+        "bank:currency"
+    ]
+}

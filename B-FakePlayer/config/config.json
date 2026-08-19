@@ -1,0 +1,12 @@
+{
+    "maxFakePlayersPerUser": 5,
+    "deposit": 500,
+    "rentPerDay": 100,
+    "lateFee": 1000,
+    "distanceLimit": 100000,
+    "economic": {
+        "economicType": "llmoney",
+        "scoreboardName": "money",
+        "currencyUnitName": "金币"
+    }
+}

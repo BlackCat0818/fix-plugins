@@ -1,0 +1,381 @@
+{
+    "17c7a00c-7d71-38c3-9326-3711ba226c1d": {
+        "ownerName": "Leaves240430",
+        "ownFakePlayerCount": 1,
+        "fakePlayersList": [
+            {
+                "fpName": "test",
+                "fpPosX": 1551,
+                "fpPosY": 65,
+                "fpPosZ": -98,
+                "fpPosDimid": 0,
+                "createdTime": "2025-09-18 18:51:17",
+                "autoRespawnWhenDie": true,
+                "autoRespawnWhenServerStarted": true,
+                "respawnPos": "origin",
+                "rentEndDate": "2025-09-19 18:51:17",
+                "destroyDate": "2025-09-26 18:51:17",
+                "isOnline": false,
+                "status": "destroyed",
+                "inventory": []
+            }
+        ]
+    },
+    "226af801-e733-3d24-bc87-a4f3760a939b": {
+        "ownerName": "YuFeng9059",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "faa777a4-064e-39c9-9f6b-38f0dd21a942": {
+        "ownerName": "xcni8018",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "74b8048f-dd1c-3fdd-82d7-e5205556925e": {
+        "ownerName": "LoveSong471",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "d396294d-c200-36e8-8b71-749298080d4c": {
+        "ownerName": "k9idk6931",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "28ae40d8-b19a-3900-87a2-e1dd3a39c585": {
+        "ownerName": "WavyCreature314",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "9045423d-e4ea-3165-9390-13a0c5d5eb5e": {
+        "ownerName": "SownMirror5344",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "fa6837e6-f0ba-3740-871c-afceaa514fbc": {
+        "ownerName": "WaxLight7732",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "6f96b518-6824-3663-aa6e-29fd0af7908c": {
+        "ownerName": "namiter1021",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "41550102-6973-31b8-9d29-c26bc9bd8322": {
+        "ownerName": "Ivyx314",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "b3fa79a4-a2ab-3de9-b7ad-b7814c583e6a": {
+        "ownerName": "OakenBirch77490",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "aac31826-fbf3-3ab9-92ba-55a16181a8ee": {
+        "ownerName": "Tomyyds886",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "45282070-1a8f-3897-af68-708847c6f94a": {
+        "ownerName": "jltmesb",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "49448f22-6284-33e1-b4e4-348f785e43c2": {
+        "ownerName": "CountyBug545302",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "b21aa43f-b831-3c56-a903-f8620108249f": {
+        "ownerName": "xiaoX nb",
+        "ownFakePlayerCount": 1,
+        "fakePlayersList": [
+            {
+                "fpName": "Iron",
+                "fpPosX": 3088,
+                "fpPosY": 63,
+                "fpPosZ": 602,
+                "fpPosDimid": 0,
+                "createdTime": "2026-08-17 06:59:24",
+                "autoRespawnWhenDie": true,
+                "autoRespawnWhenServerStarted": true,
+                "respawnPos": "origin",
+                "rentEndDate": "2026-08-19 06:59:24",
+                "destroyDate": "2026-08-26 06:59:24",
+                "isOnline": false,
+                "status": "grace",
+                "inventory": []
+            }
+        ]
+    },
+    "642ffd3d-bb57-36b1-8ff9-222afe2e8996": {
+        "ownerName": "hy123hy123",
+        "ownFakePlayerCount": 3,
+        "fakePlayersList": [
+            {
+                "fpName": "tie",
+                "fpPosX": -5906,
+                "fpPosY": 121,
+                "fpPosZ": 5284,
+                "fpPosDimid": 0,
+                "createdTime": "2026-08-17 13:17:50",
+                "autoRespawnWhenDie": true,
+                "autoRespawnWhenServerStarted": true,
+                "respawnPos": "origin",
+                "rentEndDate": "2026-08-21 13:17:50",
+                "destroyDate": "2026-08-28 13:17:50",
+                "isOnline": false,
+                "status": "rented",
+                "inventory": []
+            },
+            {
+                "fpName": "111",
+                "fpPosX": -6193,
+                "fpPosY": 70,
+                "fpPosZ": 5363,
+                "fpPosDimid": 0,
+                "createdTime": "2026-08-17 13:18:57",
+                "autoRespawnWhenDie": true,
+                "autoRespawnWhenServerStarted": true,
+                "respawnPos": "origin",
+                "rentEndDate": "2026-08-19 13:18:57",
+                "destroyDate": "2026-08-26 13:18:57",
+                "isOnline": true,
+                "status": "rented",
+                "inventory": []
+            },
+            {
+                "fpName": "diao",
+                "fpPosX": 2068,
+                "fpPosY": 31,
+                "fpPosZ": 1362,
+                "fpPosDimid": 1,
+                "createdTime": "2026-08-17 20:14:48",
+                "autoRespawnWhenDie": true,
+                "autoRespawnWhenServerStarted": true,
+                "respawnPos": "origin",
+                "rentEndDate": "2026-08-18 20:14:48",
+                "destroyDate": "2026-08-25 20:14:48",
+                "isOnline": false,
+                "status": "grace",
+                "inventory": []
+            }
+        ]
+    },
+    "07a8ffef-f2c9-37db-8e62-a086e9beb957": {
+        "ownerName": "ReleaseHeaven",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "21dfcac0-f91b-3f93-83aa-71499e6261b9": {
+        "ownerName": "dear OvO9491",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "b66a0d71-b0ee-356b-a7ca-c1a1add67439": {
+        "ownerName": "SownMirror4700",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "5ca3a689-5d1d-3fe2-87a9-c4789f430d26": {
+        "ownerName": "wangni4303",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "1d683d16-890f-3b4b-8761-a0f4995083a3": {
+        "ownerName": "Sii114514",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "b6dee3c0-250a-3620-937a-55495f845f86": {
+        "ownerName": "Aden1233880",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "d306378f-3c21-35b7-b3eb-41f09b6df743": {
+        "ownerName": "rorsbieh7723",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "38aa29bf-f540-3780-9f9b-22155395685f": {
+        "ownerName": "WavingWool56251",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "c13d32ef-73ed-39c5-abde-f2980567f618": {
+        "ownerName": "IBrahim7970",
+        "ownFakePlayerCount": 1,
+        "fakePlayersList": [
+            {
+                "fpName": "xaomao",
+                "fpPosX": -25476,
+                "fpPosY": 63,
+                "fpPosZ": 6759,
+                "fpPosDimid": 0,
+                "createdTime": "2026-08-13 22:48:59",
+                "autoRespawnWhenDie": true,
+                "autoRespawnWhenServerStarted": true,
+                "respawnPos": "origin",
+                "rentEndDate": "2026-08-18 22:48:59",
+                "destroyDate": "2026-08-25 22:48:59",
+                "isOnline": false,
+                "status": "grace",
+                "inventory": []
+            }
+        ]
+    },
+    "5c978b9d-acd0-3c9f-89c3-2491c13a227e": {
+        "ownerName": "OnlyMolirainy",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "e2eb14ea-b92f-3f28-a0e0-300eb43c351a": {
+        "ownerName": "AniZhiSiBuYu",
+        "ownFakePlayerCount": 1,
+        "fakePlayersList": [
+            {
+                "fpName": "nishi",
+                "fpPosX": -25086,
+                "fpPosY": 225,
+                "fpPosZ": 6743,
+                "fpPosDimid": 0,
+                "createdTime": "2026-08-15 08:00:35",
+                "autoRespawnWhenDie": true,
+                "autoRespawnWhenServerStarted": true,
+                "respawnPos": "origin",
+                "rentEndDate": "2026-08-17 08:00:35",
+                "destroyDate": "2026-08-24 08:00:35",
+                "isOnline": false,
+                "status": "grace",
+                "inventory": []
+            }
+        ]
+    },
+    "f99ef167-72f3-32b5-9255-6620ca6a8735": {
+        "ownerName": "EastBlurryKe",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "d9ecffc1-004f-3d4e-8206-192d8b993cb7": {
+        "ownerName": "FunSun6196",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "f7d229ea-47ad-3764-9497-2ad5f2033af8": {
+        "ownerName": "Patricia5055",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "089a67e7-bb9f-37be-94db-d5c41ba1c2ec": {
+        "ownerName": "QING9187369",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "4c7b7b03-26b2-3764-a435-2f7f09b042b1": {
+        "ownerName": "StanWin2347",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "49fbf6cb-7d01-35ee-b333-f7bd794af537": {
+        "ownerName": "drz egg5136",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "c1c76377-302e-323f-8c9c-4aaa7b5f8f84": {
+        "ownerName": "Xiaochen OUO137",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "ccb5095d-165f-31ba-b246-458e51548b4b": {
+        "ownerName": "SpinalSauce4753",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "558d9da3-8744-3d90-97ea-a7e13b3a8ab1": {
+        "ownerName": "YanHengahhh",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "d29a02b4-c661-36e1-8608-8bfa2f9383a8": {
+        "ownerName": "Lingchen0182",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "cc19808c-3a06-39ca-9096-6e6fafac810e": {
+        "ownerName": "LYX745478",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "3c71890c-c9fc-3e7a-8e10-50cd80c05d6c": {
+        "ownerName": "Boot114514666",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "c14a3055-37d3-32b3-8d76-149427b944b3": {
+        "ownerName": "Yyl2013",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "138d40d7-52bf-34c6-9f6a-e6b80c87bd14": {
+        "ownerName": "Tom boy8028",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "f70e3a73-3a99-3e73-a796-aa819577ab78": {
+        "ownerName": "LinAn8272",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "51bfcd16-ebbe-37a3-ade2-d78f8024a23c": {
+        "ownerName": "YINXIN1423",
+        "ownFakePlayerCount": 1,
+        "fakePlayersList": [
+            {
+                "fpName": "3x",
+                "fpPosX": -2105,
+                "fpPosY": 177,
+                "fpPosZ": 1130,
+                "fpPosDimid": 0,
+                "createdTime": "2026-08-18 00:02:39",
+                "autoRespawnWhenDie": true,
+                "autoRespawnWhenServerStarted": true,
+                "respawnPos": "origin",
+                "rentEndDate": "2026-08-21 00:02:39",
+                "destroyDate": "2026-08-28 00:02:39",
+                "isOnline": false,
+                "status": "rented",
+                "inventory": []
+            }
+        ]
+    },
+    "6d45329d-1ff7-3644-a1b1-6785edf51943": {
+        "ownerName": "Yexing1020",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "0c5cf1d0-ea3b-3cd7-80d8-516091304f06": {
+        "ownerName": "Lingchen0183",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "54c2e948-a304-35b3-8857-bcf47cab916c": {
+        "ownerName": "JMComic25515",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "eb2f09ea-c4ff-3cd3-be70-70c044ee5b99": {
+        "ownerName": "SolvedArt3322",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "04281e9f-476b-3a59-bb34-17c911109ff4": {
+        "ownerName": "SavoryList19768",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    },
+    "bf4551f2-27ac-3c30-a89b-96e335341be0": {
+        "ownerName": "INFINITE5123",
+        "ownFakePlayerCount": 0,
+        "fakePlayersList": []
+    }
+}

@@ -1,0 +1,539 @@
+// LiteLoader-AIDS automatic generated
+/// <reference path="d:\LLS/dts/helperlib/src/index.d.ts"/> 
+
+
+/*
+
+    todo:
+    1.支持转账
+    2.充值、提现 支持 在同一个按钮中使用开关来控制选择是否充值还是提现，减少主表单按钮数量
+
+*/
+
+//const { Scoreboard } = require('./GMLIB-LegacyRemoteCallApi/lib/GMLIB_API-JS');
+
+const plugin_path = `./plugins/Y-Bank/`;
+
+let config = new JsonConfigFile(plugin_path + `config.json`);
+
+config.init("插件基础配置", {
+    "指令": "bank",
+    "指令描述": "银行",
+    "银行主表单标题": "银行",
+    "银行主表单内容": "欢迎来到银行：{playerName}", // {playerName} 是 玩家名
+    "充值按钮图片路径": "", // 例如 textures/items/apple
+    "提现按钮图片路径": "",
+    "存款按钮图片路径": "",
+    "取款按钮图片路径": "",
+    "贷款按钮图片路径": "",
+    "贷款-手动还款按钮图片路径": "",
+})
+
+config.init("银行相关配置", {
+    "经济类型": "scoreboard",
+    "计分板名称": "money",
+    "货币名称": "金币",
+    "现金物品": "minecraft:emerald",
+    "现金价值": 100,
+    "充值比例": 100,
+    "提现比例": 100,
+    "每日充值限额": 100000,
+    "每日提现限额": 100000,
+    "存款每日利息百分比": 15,
+    "贷款最大金额": 99999,
+    "贷款每日利息百分比": 30,
+    "贷款默认信誉分": 100,
+    "贷款信誉分门槛": 70
+})
+
+let playerData = new JsonConfigFile(plugin_path + `playerData.json`);
+
+playerData.init("玩家贷款数据", {});
+
+let moneyType = config.get("银行相关配置")["经济类型"],
+    scoreName = config.get("银行相关配置")["计分板名称"]
+
+class moneyManager {
+    constructor(type, object = "") {
+        this.type = type;
+        this.object = object;
+    }
+    set(xuid, value) {
+        switch (this.type) {
+            case "llmoney":
+                return money.set(xuid, value);
+            case "scoreboard":
+                //return Scoreboard.setPlayerScore(data.xuid2uuid(xuid), this.object, value);
+                return mc.setPlayerScore(data.xuid2uuid(xuid), this.object, value);
+            default:
+                //return logger.error(`未知的经济类型 : ${this.type}`);
+                return `未知的经济类型 : ${this.type}`;
+        }
+    }
+    add(xuid, value) {
+        switch (this.type) {
+            case "llmoney":
+                return money.add(xuid, value);
+            case "scoreboard":
+                //return Scoreboard.addPlayerScore(data.xuid2uuid(xuid), this.object, value);
+                return mc.addPlayerScore(data.xuid2uuid(xuid), this.object, value);
+            default:
+                //return logger.error(`未知的经济类型 : ${this.type}`);
+                return `未知的经济类型 : ${this.type}`;
+        }
+    }
+    reduce(xuid, value) {
+        switch (this.type) {
+            case "llmoney":
+                return money.reduce(xuid, value);
+            case "scoreboard":
+                //return Scoreboard.reducePlayerScore(data.xuid2uuid(xuid), this.object, value);
+                return mc.reducePlayerScore(data.xuid2uuid(xuid), this.object, value);
+            default:
+                //return logger.error(`未知的经济类型 : ${this.type}`);
+                return `未知的经济类型 : ${this.type}`;
+        }
+    }
+    trans(xuid1, xuid2, value, PayNote) {
+        switch (this.type) {
+            case "llmoney":
+                return money.trans(xuid1, xuid2, value, PayNote);
+            case "scoreboard":
+                //Scoreboard.addPlayerScore(data.xuid2uuid(xuid2), this.object, value);
+                //return Scoreboard.reducePlayerScore(data.xuid2uuid(xuid1), this.object, value);
+                return mc.reducePlayerScore(data.xuid2uuid(xuid1), this.object, value) && mc.addPlayerScore(data.xuid2uuid(xuid2), this.object, value);
+            default:
+                //return logger.error(`未知的经济类型 : ${this.type}`);
+                return `未知的经济类型 : ${this.type}`;
+        }
+    }
+    get(xuid) {
+        switch (this.type) {
+            case "llmoney":
+                return money.get(xuid);
+            case "scoreboard":
+                //return Scoreboard.getPlayerScore(data.xuid2uuid(xuid), this.object);
+                return mc.getPlayerScore(data.xuid2uuid(xuid), this.object);
+            default:
+                //return logger.error(`未知的经济类型 : ${this.type}`);
+                return `未知的经济类型 : ${this.type}`;
+        }
+    }
+    getHistory(xuid, time = 86400 * 1) {
+        switch (this.type) {
+            case "llmoney":
+                let record = money.getHistory(xuid, 86400 * time); // 1 天 = 86400 秒
+                let resultArray = record.map(transaction => {
+                    let from = transaction.from === "System" ? "系统" : transaction.from;
+                    let to = transaction.to === "System" ? "系统" : transaction.to;
+                    let note;
+                    switch (transaction.note) {
+                        case "TPRConsume":
+                            note = "随机传送消耗经济";
+                            break;
+                        case "RefreshChunkConsume":
+                            note = "刷新区块消耗经济";
+                            break;
+                        default:
+                            note = transaction.note;
+                            break;
+                    }
+                    return `付款人: ${from}, 收款人: ${to}, 金额: ${transaction.money}, 时间: ${transaction.time}, 备注: ${note}`;
+                });
+                return resultArray.join('\n');
+            case "scoreboard":
+                //return logger.error(`计分板经济暂不支持查询历史账单!`);
+                return `计分板经济暂不支持查询历史账单!`;
+            default:
+                //return logger.error(`未知的经济类型 : ${this.type}`);
+                return `未知的经济类型 : ${this.type}`;
+        }
+    }
+    clearHistory(time = 86400 * 1) {
+        switch (this.type) {
+            case "llmoney":
+                return money.clearHistory(time);
+            case "scoreboard":
+                //return logger.error(`计分板经济暂不支持删除历史账单记录!`);
+                return `计分板经济暂不支持删除历史账单记录!`;
+            default:
+                //return logger.error(`未知的经济类型 : ${this.type}`);
+                return `未知的经济类型 : ${this.type}`;
+        }
+    }
+}
+
+const Economy = new moneyManager(moneyType, scoreName);
+
+/** 
+ * @returns 当前时间字符串 例如 "2024-6-27"
+ */
+function getCurrentDate() {
+    return system.getTimeStr().split(" ")[0];
+}
+
+/**
+ * @returns 当前时间具体字符串 例如 "2024-06-24 19:28:30"
+ */
+function getdetailCurrentTime() {
+    return system.getTimeStr();
+}
+
+/**
+ * @description 银行主表单
+ * @param {LLSE_Player} player 玩家对象
+ */
+function mainBankForm(player) {
+
+    let fm = mc.newSimpleForm();
+    fm.setTitle(config.get("插件基础配置")["银行主表单标题"]);
+    fm.setContent(config.get("插件基础配置")["银行主表单内容"].replace("{playerName}", player.realName));
+    //--------------------------
+    fm.addButton(`充值-物品换${config.get("银行相关配置")["货币名称"]}`, config.get("插件基础配置")["充值按钮图片路径"]);
+    fm.addButton(`提现-${config.get("银行相关配置")["货币名称"]}换物品`, config.get("插件基础配置")["提现按钮图片路径"]);
+    fm.addButton(`存款`, config.get("插件基础配置")["存款按钮图片路径"]);
+    fm.addButton(`取款`, config.get("插件基础配置")["取款按钮图片路径"]);
+    fm.addButton(`贷款`, config.get("插件基础配置")["贷款按钮图片路径"]);
+    fm.addButton(`贷款-手动还款`, config.get("插件基础配置")["贷款-手动还款按钮图片路径"]);
+
+    player.sendForm(fm, (pl, id) => {
+        if (id == null) {
+            return;
+        }
+        switch (id) {
+            case 0: // 充值
+                recharge(pl);
+                break;
+            case 1: // 提现
+                cashWithdrawal(pl);
+                break;
+            case 2: // 存款
+                depositMoney(pl);
+                break;
+            case 3: // 取款
+                withDrawMoney(pl);
+                break;
+            case 4: // 贷款
+                loan(pl);
+                break;
+            case 5: // 贷款-手动还款
+                loanManualRepayment(pl);
+                break;
+        }
+    })
+
+}
+
+/**
+ * @description 充值表单
+ * @param {LLSE_Player} player 玩家对象
+ */
+function recharge(player) {
+    let fm = mc.newCustomForm();
+    fm.setTitle(`银行-充值`);
+    //--------------------------
+    fm.addLabel(`欢迎来到银行 : ${player.realName} , 你的存款 : ${Economy.get(player.xuid)}`);
+    fm.addInput(`请输入想要充值的数额：`, `请输入正整数`);
+    player.sendForm(fm, (pl, id) => {
+        if (id == null) {
+            return mainBankForm(pl);
+        }
+        if (id[1]) {
+            //贷款-手动还款的逻辑...
+            //还款成功增加贷款信誉分
+            let input = Number(id[1]);
+            if (isPositiveInteger(input)) {
+                pl.tell(`${input}`);
+            } else {
+                pl.tell(`${Format.Red}请输入正整数!`);
+            }
+        } else {
+            pl.tell(`${Format.Red}请输入有效的正整数!`);
+        }
+    })
+}
+
+/**
+ * @description 提现表单
+ * @param {LLSE_Player} player 玩家对象
+ */
+function cashWithdrawal(player) {
+    let fm = mc.newCustomForm();
+    fm.setTitle(`银行-提现`);
+    //--------------------------
+    fm.addLabel(`欢迎来到银行 : ${player.realName} , 你的存款 : ${Economy.get(player.xuid)}`);
+    fm.addInput(`请输入想要提现的数额：`, `请输入正整数`);
+    player.sendForm(fm, (pl, id) => {
+        if (id == null) {
+            return mainBankForm(pl);
+        }
+        if (id[1]) {
+            //贷款-手动还款的逻辑...
+            //还款成功增加贷款信誉分
+            let input = Number(id[1]);
+            if (isPositiveInteger(input)) {
+                pl.tell(`${input}`);
+            } else {
+                pl.tell(`${Format.Red}请输入正整数!`);
+            }
+        } else {
+            pl.tell(`${Format.Red}请输入有效的正整数!`);
+        }
+    })
+}
+
+/**
+ * @description 存款表单
+ * @param {LLSE_Player} player 玩家对象
+ */
+function depositMoney(player) {
+    let fm = mc.newCustomForm();
+    fm.setTitle(`银行-存款`);
+    //--------------------------
+    fm.addLabel(`欢迎来到银行 : ${player.realName} , 你的存款 : ${Economy.get(player.xuid)}`);
+    fm.addInput(`请输入想要存入的数额：`, `请输入正整数`);
+    player.sendForm(fm, (pl, id) => {
+        if (id == null) {
+            return mainBankForm(pl);
+        }
+        if (id[1]) {
+            //贷款-手动还款的逻辑...
+            //还款成功增加贷款信誉分
+            let input = Number(id[1]);
+            if (isPositiveInteger(input)) {
+                pl.tell(`${input}`);
+            } else {
+                pl.tell(`${Format.Red}请输入正整数!`);
+            }
+        } else {
+            pl.tell(`${Format.Red}请输入有效的正整数!`);
+        }
+    })
+}
+
+/**
+ * @description 取款表单
+ * @param {LLSE_Player} player 玩家对象
+ */
+function withDrawMoney(player) {
+    let fm = mc.newCustomForm();
+    fm.setTitle(`银行-取款`);
+    //--------------------------
+    fm.addLabel(`欢迎来到银行 : ${player.realName} , 你的存款 : ${Economy.get(player.xuid)}`);
+    fm.addInput(`请输入想要取出的数额：`, `请输入正整数`);
+    player.sendForm(fm, (pl, id) => {
+        if (id == null) {
+            return mainBankForm(pl);
+        }
+        if (id[1]) {
+            //贷款-手动还款的逻辑...
+            //还款成功增加贷款信誉分
+            let input = Number(id[1]);
+            if (isPositiveInteger(input)) {
+                pl.tell(`${input}`);
+            } else {
+                pl.tell(`${Format.Red}请输入正整数!`);
+            }
+        } else {
+            pl.tell(`${Format.Red}请输入有效的正整数!`);
+        }
+    })
+}
+
+/**
+ * @description 贷款表单
+ * @param {LLSE_Player} player 玩家对象
+ */
+function loan(player) {
+    let fm = mc.newCustomForm();
+    fm.setTitle(`银行-贷款`);
+    //--------------------------
+    let arr = [
+        `欢迎来到银行 : ${player.realName} , 你的存款 : ${Economy.get(player.xuid)}`,
+        `你的贷款信誉分 : ${getLoanCreditScore(player)}`,
+        `贷款最低要求信誉分 : ${Format.Green}${config.get("银行相关配置")["贷款信誉分门槛"]}`
+    ]
+    fm.addLabel(arr.join("\n"));
+    fm.addInput(`请输入想要贷款的数额：`, `请输入正整数`);
+    player.sendForm(fm, (pl, id) => {
+        if (id == null) {
+            return mainBankForm(pl);
+        }
+        if (id[1]) {
+            //贷款-手动还款的逻辑...
+            //还款成功增加贷款信誉分
+            let input = Number(id[1]);
+            if (isPositiveInteger(input)) {
+                pl.tell(`${input}`);
+            } else {
+                pl.tell(`${Format.Red}请输入正整数!`);
+            }
+        } else {
+            pl.tell(`${Format.Red}请输入有效的正整数!`);
+        }
+    })
+}
+
+/**
+ * @description 贷款-手动还款表单
+ * @param {LLSE_Player} player 玩家对象
+ */
+function loanManualRepayment(player) {
+    let fm = mc.newCustomForm();
+    fm.setTitle(`银行-贷款-手动还款`);
+    //--------------------------
+    let arr = [
+        `欢迎来到银行 : ${player.realName} , 你的存款 : ${Economy.get(player.xuid)}`,
+        `你的贷款信誉分 : ${getLoanCreditScore(player)}`,
+        `贷款最低要求信誉分 : ${Format.Green}${config.get("银行相关配置")["贷款信誉分门槛"]}`
+    ]
+    fm.addLabel(arr.join("\n"));
+    fm.addInput(`请输入想要还款的数额：`, `请输入正整数`);
+    player.sendForm(fm, (pl, id) => {
+        if (id == null) {
+            return mainBankForm(pl);
+        }
+        if (id[1]) {
+            //贷款-手动还款的逻辑...
+            //还款成功增加贷款信誉分
+            let input = Number(id[1]);
+            if (isPositiveInteger(input)) {
+                pl.tell(`${input}`);
+            } else {
+                pl.tell(`${Format.Red}请输入正整数!`);
+            }
+        } else {
+            pl.tell(`${Format.Red}请输入有效的正整数!`);
+        }
+    })
+}
+
+/**
+ * @description 根据玩家对象获取玩家当前贷款信誉分
+ * @param {LLSE_Player} player 玩家对象
+ */
+function getLoanCreditScore(player) {
+    let loanCreditScore = playerData.get("玩家贷款数据")[player.realName]["当前贷款信誉分"], creditScoreDescription;
+    switch (true) {
+        case loanCreditScore < 70:
+            return creditScoreDescription = `${Format.Red}` + `${loanCreditScore} (过低)` + `${Format.Clear}`;
+        case loanCreditScore <= 100:
+            return creditScoreDescription = `${Format.Yellow}` + `${loanCreditScore} (良好)` + `${Format.Clear}`;
+        case loanCreditScore > 100:
+            return creditScoreDescription = `${Format.Green}` + `${loanCreditScore} (极好)` + `${Format.Clear}`;
+        default:
+            return creditScoreDescription = `${Format.Gray}` + `${loanCreditScore} (未知)` + `${Format.Clear}`;
+    }
+}
+
+function isPositiveInteger(num) {
+    // 正整数的正则表达式
+    const positiveIntegerPattern = /^[1-9]\d*$/;
+
+    // 使用test方法检查num是否符合正整数的模式
+    return positiveIntegerPattern.test(num.toString());
+}
+
+/**
+ * @description 根据配置文件对象将数据保存到配置文件
+ * @param {JsonConfigFile} conf 配置文件对象
+ * @param {any} data 保存后的数据的值
+ */
+function saveData(conf, data) {
+    conf.write(JSON.stringify(data, null, 4));
+    return conf.reload();
+}
+
+/**
+ * @description 根据配置文件对象获取其数据
+ * @param {JsonConfigFile} conf 配置文件对象
+ * @returns 加载的配置文件的数据
+ */
+function loadData(conf) {
+    let jsonData = conf.read();
+    let data = JSON.parse(jsonData);
+    return data;
+}
+
+mc.listen("onJoin", (player) => {
+    //方案一
+    let dat = loadData(playerData);
+    if (!dat["玩家贷款数据"][player.realName]) {
+        dat["玩家贷款数据"][player.realName] = {
+            "当前贷款信誉分": 100
+        }
+    }
+    saveData(playerData, dat);
+    /*
+    //方案二
+    let tempData = playerData.get("玩家贷款数据");
+    if (!tempData[player.realName]) {
+        tempData[player.realName] = {
+            "当前贷款信誉分": 100
+        }
+        playerData.set("玩家贷款数据", tempData);
+        playerData.reload();
+    }
+    */
+})
+
+mc.listen("onServerStarted", () => {
+    const cmd = mc.newCommand(config.get("插件基础配置")["指令"], config.get("插件基础配置")["指令描述"], PermType.Any);
+    cmd.overload([]);
+    cmd.setCallback((cmd, ori, out, res) => {
+        let player = ori.player;
+        mainBankForm(player);
+    })
+    cmd.setup();
+
+    if (!mc.getScoreObjective(scoreName)) {
+        mc.newScoreObjective(scoreName, config.get("银行相关配置")["货币名称"]);
+        logger.warn(`计分项 ${scoreName} 不存在，已自动创建 : ${scoreName} - ${config.get("银行相关配置")["货币名称"]}`);
+    }
+
+    setInterval(() => {
+        //贷款到期的逻辑...
+    }, 1000 * 5);
+    //clearInterval()
+})
+
+/**
+ * @param  {...(string|number)} args 
+ * @returns {string}
+ */
+function getColor(...args) {
+    return "\u001b[" + args.join(";") + "m";
+}
+
+function AutoReplace(OriText, ...args) {
+    let Index = 0;
+    while (args.length != 0) {
+        Index++;
+        let thisArg = args.shift();
+        if (thisArg != undefined) {
+            OriText = OriText.replace(`{${Index}}`, thisArg);
+        }
+    }
+    return OriText;
+}
+
+function logLogo() { // logo实在不会画，以后再画吧（Y-Bank）
+    let LoaderVersion = ll.version();
+    let VerInfoString = AutoReplace("LeviLamina-{1}.{2}.{3}{4}",
+        LoaderVersion.major,
+        LoaderVersion.minor,
+        LoaderVersion.revision,
+        (LoaderVersion.isBeta ? "Beta" : "")
+    );
+
+    logger.info(getColor(1, 33),
+        String.raw`
+            /————————/  / /\ \         /\——      /——  / / ----
+           / /      /  / /  \ \       / /\ \    / /  / /--
+          / /——————/  /_/____\ \     / /  \ \  / /  / /--
+         / /      /  / /      \ \   / /    \ \/ /  / /  --
+        /_/______/  / /        \ \ / /      \/ /  / /     ---
+    `, `
+      ${getColor(4, 33, 45)}===Highly customizable banking plugin===${getColor(0)}${getColor(1)}`, `
+    ${getColor(4, 36, 45)}=====Running in ${VerInfoString} ${ll.scriptEngineVersion}=====${getColor(0)}${getColor(1)}`);
+}

@@ -1,0 +1,1893 @@
+{
+    "b3fa79a4-a2ab-3de9-b7ad-b7814c583e6a": {
+        "storeOwnerName": "OakenBirch77490",
+        "storeName": "OakenBirch77490 的木材店",
+        "storeInfo": "欢迎光临~",
+        "isOpen": true,
+        "createDate": "2026-08-11 17:46:32",
+        "visits": 21,
+        "tradeCount": 10,
+        "revenue": 310,
+        "goods": []
+    },
+    "d396294d-c200-36e8-8b71-749298080d4c": {
+        "storeOwnerName": "k9idk6931",
+        "storeName": "k9idk6931 的食品商店",
+        "storeInfo": "PVP再强大，你也要食物活下去，欢迎",
+        "isOpen": true,
+        "createDate": "2026-08-12 10:59:00",
+        "visits": 22,
+        "tradeCount": 3,
+        "revenue": 43,
+        "goods": []
+    },
+    "642ffd3d-bb57-36b1-8ff9-222afe2e8996": {
+        "storeOwnerName": "hy123hy123",
+        "storeName": "hy123hy123 的小店",
+        "storeInfo": "欢迎光临我的小店~",
+        "isOpen": true,
+        "createDate": "2026-08-12 17:20:30",
+        "visits": 15,
+        "tradeCount": 53,
+        "revenue": 9124,
+        "goods": [
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 300,
+                "itemInfo": "附魔书\n 耐久 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":17s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 00:04:23"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "附魔书\n [经验修补]",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":26s,\"lvl\":1s}]}}",
+                "itemUploadTime": "2026-08-16 00:05:41"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:08:09"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "附魔书\n 锋利 V",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":9s,\"lvl\":5s}]}}",
+                "itemUploadTime": "2026-08-16 00:09:46"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 52,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":52b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 64,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 64,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 64,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 64,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 64,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 64,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 64,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 64,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 64,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 64,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "海晶灯",
+                "itemTypeName": "minecraft:sea_lantern",
+                "itemCount": 30,
+                "itemUnitPrice": 2,
+                "itemInfo": "海晶灯",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sea_lantern\",\"states\":{},\"version\":18168865},\"Count\":30b,\"Damage\":0s,\"Name\":\"minecraft:sea_lantern\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-12 23:21:02"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 42,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":42b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 62,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":62b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 62,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":62b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 52,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":52b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 62,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":62b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 54,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":54b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 60,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":60b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 64,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 11:12:10"
+            },
+            {
+                "itemName": "潜影盒",
+                "itemTypeName": "minecraft:undyed_shulker_box",
+                "itemCount": 1,
+                "itemUnitPrice": 700,
+                "itemInfo": "潜影盒- (\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64\n-平滑石 * 64)",
+                "itemRemark": "买不了吃亏买不了上当!",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:undyed_shulker_box\",\"states\":{},\"version\":18168865},\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:undyed_shulker_box\",\"WasPickedUp\":0b,\"tag\":{\"Items\":[{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":0b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":1b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":2b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":3b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":4b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":5b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":6b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":7b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":8b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":9b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":10b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":11b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":12b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":13b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":14b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":15b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":16b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":17b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":18b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":19b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":20b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":21b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":22b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":23b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":24b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":25b,\"WasPickedUp\":0b},{\"Block\":{\"name\":\"minecraft:smooth_stone\",\"states\":{},\"version\":18168865},\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:smooth_stone\",\"Slot\":26b,\"WasPickedUp\":0b}]}}",
+                "itemUploadTime": "2026-08-14 12:11:32"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 1000,
+                "itemInfo": "附魔书\n 快速潜行 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":37s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-17 22:27:16"
+            }
+        ]
+    },
+    "226af801-e733-3d24-bc87-a4f3760a939b": {
+        "storeOwnerName": "YuFeng9059",
+        "storeName": "YuFeng9059 的小店",
+        "storeInfo": "欢迎光临~",
+        "isOpen": true,
+        "createDate": "2026-08-12 17:37:27",
+        "visits": 10,
+        "tradeCount": 0,
+        "revenue": 0,
+        "goods": []
+    },
+    "28ae40d8-b19a-3900-87a2-e1dd3a39c585": {
+        "storeOwnerName": "WavyCreature314",
+        "storeName": "§o§l§cOVO",
+        "storeInfo": "§l§c欢迎光临~",
+        "isOpen": true,
+        "createDate": "2026-08-13 00:42:09",
+        "visits": 8,
+        "tradeCount": 12,
+        "revenue": 379,
+        "goods": [
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 3,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":3b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-13 01:09:08"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 31,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":31b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-13 01:09:36"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 58,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":58b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-13 01:10:11"
+            },
+            {
+                "itemName": "潜影壳",
+                "itemTypeName": "minecraft:shulker_shell",
+                "itemCount": 37,
+                "itemUnitPrice": 5,
+                "itemInfo": "潜影壳",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":37b,\"Damage\":0s,\"Name\":\"minecraft:shulker_shell\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-13 01:11:18"
+            },
+            {
+                "itemName": "龙蛋",
+                "itemTypeName": "minecraft:dragon_egg",
+                "itemCount": 1,
+                "itemUnitPrice": 99999999,
+                "itemInfo": "龙蛋",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:dragon_egg\",\"states\":{},\"version\":18168865},\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:dragon_egg\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-13 01:13:12"
+            }
+        ]
+    },
+    "aac31826-fbf3-3ab9-92ba-55a16181a8ee": {
+        "storeOwnerName": "Tomyyds886",
+        "storeName": "杂七杂八小卖部。",
+        "storeInfo": "量大管饱，还实惠。",
+        "isOpen": true,
+        "createDate": "2026-08-13 00:54:31",
+        "visits": 6,
+        "tradeCount": 29,
+        "revenue": 2668,
+        "goods": []
+    },
+    "b66a0d71-b0ee-356b-a7ca-c1a1add67439": {
+        "storeOwnerName": "SownMirror4700",
+        "storeName": "SownMirror4700 的小店",
+        "storeInfo": "不卖，纯馋人",
+        "isOpen": true,
+        "createDate": "2026-08-13 00:55:24",
+        "visits": 3,
+        "tradeCount": 0,
+        "revenue": 0,
+        "goods": []
+    },
+    "c13d32ef-73ed-39c5-abde-f2980567f618": {
+        "storeOwnerName": "IBrahim7970",
+        "storeName": "神的店铺",
+        "storeInfo": "神秘",
+        "isOpen": true,
+        "createDate": "2026-08-13 23:48:27",
+        "visits": 2,
+        "tradeCount": 1,
+        "revenue": 500,
+        "goods": []
+    },
+    "f99ef167-72f3-32b5-9255-6620ca6a8735": {
+        "storeOwnerName": "EastBlurryKe",
+        "storeName": "央",
+        "storeInfo": "欢迎光临~",
+        "isOpen": true,
+        "createDate": "2026-08-14 00:23:34",
+        "visits": 6,
+        "tradeCount": 13,
+        "revenue": 10913,
+        "goods": [
+            {
+                "itemName": "凋灵骷髅头颅",
+                "itemTypeName": "minecraft:wither_skeleton_skull",
+                "itemCount": 2,
+                "itemUnitPrice": 499,
+                "itemInfo": "凋灵骷髅头颅",
+                "itemRemark": "买不了吃亏买不了上当!",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:wither_skeleton_skull\",\"states\":{\"facing_direction\":0},\"version\":18168865},\"Count\":2b,\"Damage\":0s,\"Name\":\"minecraft:wither_skeleton_skull\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 16:00:55"
+            },
+            {
+                "itemName": "烈焰棒",
+                "itemTypeName": "minecraft:blaze_rod",
+                "itemCount": 40,
+                "itemUnitPrice": 5,
+                "itemInfo": "烈焰棒",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":40b,\"Damage\":0s,\"Name\":\"minecraft:blaze_rod\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 17:36:32"
+            },
+            {
+                "itemName": "附魔金苹果§f",
+                "itemTypeName": "minecraft:enchanted_golden_apple",
+                "itemCount": 5,
+                "itemUnitPrice": 888,
+                "itemInfo": "附魔金苹果",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":5b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_golden_apple\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-14 23:25:43"
+            },
+            {
+                "itemName": "附魔金苹果§f",
+                "itemTypeName": "minecraft:enchanted_golden_apple",
+                "itemCount": 7,
+                "itemUnitPrice": 888,
+                "itemInfo": "附魔金苹果",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":7b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_golden_apple\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-15 14:23:07"
+            },
+            {
+                "itemName": "猪笼草荚果",
+                "itemTypeName": "minecraft:pitcher_pod",
+                "itemCount": 2,
+                "itemUnitPrice": 5,
+                "itemInfo": "猪笼草荚果",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":2b,\"Damage\":0s,\"Name\":\"minecraft:pitcher_pod\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-15 21:46:12"
+            },
+            {
+                "itemName": "嗅探兽蛋",
+                "itemTypeName": "minecraft:sniffer_egg",
+                "itemCount": 1,
+                "itemUnitPrice": 101,
+                "itemInfo": "嗅探兽蛋",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Block\":{\"name\":\"minecraft:sniffer_egg\",\"states\":{\"cracked_state\":\"no_cracks\"},\"version\":18168865},\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:sniffer_egg\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-16 14:28:29"
+            }
+        ]
+    },
+    "e2eb14ea-b92f-3f28-a0e0-300eb43c351a": {
+        "storeOwnerName": "AniZhiSiBuYu",
+        "storeName": "AniZhiSiBuYu 的小店",
+        "storeInfo": "优质商品",
+        "isOpen": true,
+        "createDate": "2026-08-15 03:52:36",
+        "visits": 2,
+        "tradeCount": 14,
+        "revenue": 914,
+        "goods": []
+    },
+    "558d9da3-8744-3d90-97ea-a7e13b3a8ab1": {
+        "storeOwnerName": "YanHengahhh",
+        "storeName": "YanHengahhh 的小店",
+        "storeInfo": "欢迎光临~",
+        "isOpen": true,
+        "createDate": "2026-08-15 22:20:07",
+        "visits": 2,
+        "tradeCount": 1,
+        "revenue": 100,
+        "goods": []
+    },
+    "089a67e7-bb9f-37be-94db-d5c41ba1c2ec": {
+        "storeOwnerName": "QING9187369",
+        "storeName": "青青小店",
+        "storeInfo": "亲亲 青青",
+        "isOpen": true,
+        "createDate": "2026-08-15 23:22:06",
+        "visits": 1,
+        "tradeCount": 0,
+        "revenue": 0,
+        "goods": []
+    },
+    "c1c76377-302e-323f-8c9c-4aaa7b5f8f84": {
+        "storeOwnerName": "Xiaochen OUO137",
+        "storeName": "Xiaochen OUO137 的小店",
+        "storeInfo": "不买东西是gay(良心商家)",
+        "isOpen": true,
+        "createDate": "2026-08-16 12:35:07",
+        "visits": 1,
+        "tradeCount": 3,
+        "revenue": 20,
+        "goods": [
+            {
+                "itemName": "铁剑",
+                "itemTypeName": "minecraft:iron_sword",
+                "itemCount": 1,
+                "itemUnitPrice": 1,
+                "itemInfo": "铁剑-(耐久:181/250)\n 锋利 III",
+                "itemRemark": "买不了吃亏买不了上当!",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:iron_sword\",\"WasPickedUp\":0b,\"tag\":{\"Damage\":69,\"ench\":[{\"id\":9s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-16 12:35:44"
+            },
+            {
+                "itemName": "铁剑",
+                "itemTypeName": "minecraft:iron_sword",
+                "itemCount": 1,
+                "itemUnitPrice": 250,
+                "itemInfo": "铁剑-(耐久:26/250)\n 火焰附加 I \n 锋利 III\n 击退 II",
+                "itemRemark": "牛逼铁剑",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:iron_sword\",\"WasPickedUp\":0b,\"tag\":{\"Damage\":224,\"ench\":[{\"id\":13s,\"lvl\":1s},{\"id\":9s,\"lvl\":3s},{\"id\":12s,\"lvl\":2s}]}}",
+                "itemUploadTime": "2026-08-16 12:38:07"
+            },
+            {
+                "itemName": "铁剑",
+                "itemTypeName": "minecraft:iron_sword",
+                "itemCount": 1,
+                "itemUnitPrice": 9,
+                "itemInfo": "铁剑-(耐久:229/250)",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:iron_sword\",\"WasPickedUp\":0b,\"tag\":{\"Damage\":21}}",
+                "itemUploadTime": "2026-08-16 12:40:26"
+            },
+            {
+                "itemName": "南瓜派",
+                "itemTypeName": "minecraft:pumpkin_pie",
+                "itemCount": 63,
+                "itemUnitPrice": 2,
+                "itemInfo": "南瓜派",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":63b,\"Damage\":0s,\"Name\":\"minecraft:pumpkin_pie\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-16 14:34:28"
+            }
+        ]
+    },
+    "f70e3a73-3a99-3e73-a796-aa819577ab78": {
+        "storeOwnerName": "LinAn8272",
+        "storeName": "LinAn8272 的小店",
+        "storeInfo": "欢迎光临~",
+        "isOpen": true,
+        "createDate": "2026-08-18 13:34:20",
+        "visits": 1,
+        "tradeCount": 2,
+        "revenue": 64,
+        "goods": [
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 20,
+                "itemInfo": "附魔书\n [精准采集]\n致密 IV",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":16s,\"lvl\":1s},{\"id\":39s,\"lvl\":4s}]}}",
+                "itemUploadTime": "2026-08-18 16:00:02"
+            },
+            {
+                "itemName": "熟鲑鱼",
+                "itemTypeName": "minecraft:cooked_salmon",
+                "itemCount": 64,
+                "itemUnitPrice": 1,
+                "itemInfo": "熟鲑鱼",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":64b,\"Damage\":0s,\"Name\":\"minecraft:cooked_salmon\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-18 16:06:01"
+            },
+            {
+                "itemName": "命名牌",
+                "itemTypeName": "minecraft:name_tag",
+                "itemCount": 17,
+                "itemUnitPrice": 2,
+                "itemInfo": "命名牌",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":17b,\"Damage\":0s,\"Name\":\"minecraft:name_tag\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-19 01:36:39"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 50,
+                "itemInfo": "附魔书\n 荆棘 II\n 爆炸保护 IV\n 耐久 III\n 忠诚 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":5s,\"lvl\":2s},{\"id\":3s,\"lvl\":4s},{\"id\":17s,\"lvl\":3s},{\"id\":31s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-19 01:39:10"
+            },
+            {
+                "itemName": "附魔书",
+                "itemTypeName": "minecraft:enchanted_book",
+                "itemCount": 1,
+                "itemUnitPrice": 50,
+                "itemInfo": "附魔书\n 穿刺 V\n 锋利 III",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:enchanted_book\",\"WasPickedUp\":0b,\"tag\":{\"ench\":[{\"id\":29s,\"lvl\":5s},{\"id\":9s,\"lvl\":3s}]}}",
+                "itemUploadTime": "2026-08-19 01:40:16"
+            }
+        ]
+    },
+    "54c2e948-a304-35b3-8857-bcf47cab916c": {
+        "storeOwnerName": "JMComic25515",
+        "storeName": "JMComic25515 的小店",
+        "storeInfo": "欢迎光临~",
+        "isOpen": true,
+        "createDate": "2026-08-18 15:42:30",
+        "visits": 2,
+        "tradeCount": 1,
+        "revenue": 150,
+        "goods": [
+            {
+                "itemName": "钻石头盔",
+                "itemTypeName": "minecraft:diamond_helmet",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "钻石头盔-(满耐久)",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:diamond_helmet\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-18 15:44:57"
+            },
+            {
+                "itemName": "钻石护腿",
+                "itemTypeName": "minecraft:diamond_leggings",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "钻石护腿-(满耐久)",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:diamond_leggings\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-18 15:46:09"
+            },
+            {
+                "itemName": "钻石靴子",
+                "itemTypeName": "minecraft:diamond_boots",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "钻石靴子-(满耐久)",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:diamond_boots\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-18 15:46:36"
+            },
+            {
+                "itemName": "钻石头盔",
+                "itemTypeName": "minecraft:diamond_helmet",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "钻石头盔-(满耐久)",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:diamond_helmet\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-18 15:47:28"
+            },
+            {
+                "itemName": "钻石胸甲",
+                "itemTypeName": "minecraft:diamond_chestplate",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "钻石胸甲-(满耐久)",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:diamond_chestplate\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-18 15:48:04"
+            },
+            {
+                "itemName": "钻石护腿",
+                "itemTypeName": "minecraft:diamond_leggings",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "钻石护腿-(满耐久)",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:diamond_leggings\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-18 15:49:06"
+            },
+            {
+                "itemName": "钻石靴子",
+                "itemTypeName": "minecraft:diamond_boots",
+                "itemCount": 1,
+                "itemUnitPrice": 150,
+                "itemInfo": "钻石靴子-(满耐久)",
+                "itemRemark": "很好的商品",
+                "itemSNBT": "{\"Count\":1b,\"Damage\":0s,\"Name\":\"minecraft:diamond_boots\",\"WasPickedUp\":0b}",
+                "itemUploadTime": "2026-08-18 15:49:28"
+            }
+        ]
+    }
+}
