@@ -1,0 +1,16 @@
+{
+    "entry": "CameraDirector.js",
+    "name": "CameraDirector",
+    "type": "lse-quickjs",
+    "version": "0.9.2-beta",
+    "author": "BlackCat",
+    "description": "越肩视角 + 导播台 合并插件",
+    "extraInfo": {
+        "作者qq": "3096514973"
+    },
+    "dependencies": [
+        {
+            "name": "legacy-script-engine-quickjs"
+        }
+    ]
+}

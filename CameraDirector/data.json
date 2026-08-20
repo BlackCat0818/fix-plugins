@@ -1,0 +1,19 @@
+{
+    "monitorStates": {
+        "226af801-e733-3d24-bc87-a4f3760a939b": {
+            "targetName": "Sii114514",
+            "originalPos": {
+                "x": -580.9085083007813,
+                "y": 89.44012451171875,
+                "z": -863.2247924804688,
+                "dimid": 0
+            },
+            "originalGameMode": 1
+        }
+    },
+    "CameraDirector": {
+        "task": true,
+        "director": "YuFeng9059",
+        "directedPlayer": "Sii114514"
+    }
+}
