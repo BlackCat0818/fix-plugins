@@ -13,7 +13,7 @@
 
 // ==================== 插件基本信息 ====================
 const PLUGIN_NAME = "CameraDirector";
-const PLUGIN_VERSION = [0, 9, 3, Version.Beta];
+const PLUGIN_VERSION = [0, 9, 4, Version.Beta];
 const PLUGIN_PATH = `./plugins/${PLUGIN_NAME}/`;
 const CONFIG_PATH = `${PLUGIN_PATH}config.json`;
 const DATA_PATH = `${PLUGIN_PATH}data.json`;
@@ -190,26 +190,23 @@ function ensurePlayerMonitorState(player, targetPlayer) {
 function clearPlayerCamera(player) {
     if (!player) return;
     const uuid = player.uuid;
+
     // 停止定时器
     if (tickTimers.has(uuid)) {
         clearInterval(tickTimers.get(uuid));
         tickTimers.delete(uuid);
     }
-    // 清除相机指令
-    mc.runcmdEx(`camera "${player.realName}" set minecraft:first_person`);
-    mc.runcmdEx(`camera "${player.realName}" clear`);
-    player.runcmd(`camera @s clear`);
-    // 移除内存状态
+
+    // 移除内存状态（但保留持久化数据用于恢复）
     playerCamState.delete(uuid);
     monitorMap.delete(uuid);
 
-    // ----- 从持久化恢复原始位置和游戏模式 -----
+    // ----- 从持久化恢复原始位置和游戏模式（先执行） -----
     const data = DATA.get("monitorStates") || {};
     if (data[uuid]) {
         const state = data[uuid];
         const pos = state.originalPos;
         const gm = state.originalGameMode;
-        // 恢复位置（如果有效）
         if (pos && isValidPos(pos)) {
             try {
                 player.teleport(new FloatPos(pos.x, pos.y, pos.z, pos.dimid));
@@ -217,7 +214,6 @@ function clearPlayerCamera(player) {
                 logger.error(`恢复位置失败: ${e.message}`);
             }
         }
-        // 恢复游戏模式
         if (gm !== undefined && gm !== null) {
             try {
                 player.setGameMode(gm);
@@ -225,11 +221,21 @@ function clearPlayerCamera(player) {
                 logger.error(`恢复游戏模式失败: ${e.message}`);
             }
         }
-        // 删除该记录
         delete data[uuid];
         DATA.set("monitorStates", data);
         DATA.reload();
     }
+
+    // 延迟执行相机清除（等待传送和模式更改完成）
+    setTimeout(() => {
+        if (!player) return; // 防止玩家已离线
+        //mc.runcmdEx(`camera "${player.realName}" set minecraft:first_person`);
+        mc.runcmdEx(`camera "${player.realName}" clear`);
+        //player.runcmd(`camera @s clear`);
+        //mc.runcmdEx(`camera "${player.realName}" clear`);
+        // 最后的全局清除作为保险（但只对需要恢复的玩家）
+        //mc.runcmd(`camera @a clear`); // 注意：这会清除所有玩家，谨慎使用
+    }, 500); // 500ms 足够传送和模式切换完成
 }
 
 /**
@@ -245,9 +251,9 @@ function enableRightShoulderCam(player, targetPlayer = player, saveOriginal = tr
         clearInterval(tickTimers.get(uuid));
         tickTimers.delete(uuid);
     }
-    mc.runcmdEx(`camera "${player.realName}" set minecraft:first_person`);
-    mc.runcmdEx(`camera "${player.realName}" clear`);
-    player.runcmd(`camera @s clear`);
+    //mc.runcmdEx(`camera "${player.realName}" set minecraft:first_person`);
+    //mc.runcmdEx(`camera "${player.realName}" clear`);
+    //player.runcmd(`camera @s clear`);
     playerCamState.delete(uuid);
     monitorMap.delete(uuid);
 
@@ -382,7 +388,7 @@ function enableRightShoulderCam(player, targetPlayer = player, saveOriginal = tr
     if (targetPlayer === player) {
         player.tell("§a已开启越肩视角");
     } else {
-        player.tell(`§a已开启对 ${targetPlayer.realName} 的越肩视角监控`);
+        //player.tell(`§a已开启对 ${targetPlayer.realName} 的越肩视角监控`);
     }
 }
 
@@ -536,11 +542,16 @@ function stopDirector(clearData = true) {
     const directorName = vdData.director;
     const director = mc.getPlayer(directorName);
     if (director) {
-        // 清除相机并恢复（clearPlayerCamera 会从持久化恢复）
+        // 主清除
         clearPlayerCamera(director);
-        // 额外强制清除
-        mc.runcmdEx(`camera "${director.realName}" set minecraft:first_person`);
-        mc.runcmdEx(`camera "${director.realName}" clear`);
+        // 额外强化清除（模仿旧版 stopDirector 中的额外操作）
+
+        // 延迟对所有玩家清除（安全兜底，但仅对需要恢复的玩家有用）
+        /*
+        setTimeout(() => {
+            mc.runcmd(`camera @a clear`);
+        }, 1000);*/
+
     }
 
     if (clearData) {
@@ -550,7 +561,6 @@ function stopDirector(clearData = true) {
         DATA.set("CameraDirector", vdData);
         DATA.reload();
     } else {
-        // 只清任务状态，保留导演和目标的记录（用于后续恢复？一般不用）
         vdData.task = false;
         DATA.set("CameraDirector", vdData);
         DATA.reload();
@@ -593,7 +603,7 @@ function sendVideoDirectorForm(player) {
         if (idx < 0 || idx >= names.length) return;
         const targetName = names[idx];
         if (startDirector(pl.realName, targetName)) {
-            pl.sendText(`§a开始导播追踪 ${targetName}（越肩视角）`);
+            //pl.sendText(`§a开始导播追踪 ${targetName}（越肩视角）`);
         } else {
             pl.sendText(`§c无法开始导播追踪，请确保目标玩家在线。`);
         }
@@ -733,7 +743,7 @@ mc.listen("onServerStarted", () => {
             }
             case "stop": {
                 if (stopDirector()) {
-                    out.success("§a已停止导播");
+                    //out.success("§a已停止导播");
                 } else {
                     out.error("当前未在导播中");
                 }
@@ -864,8 +874,7 @@ ll.onUnload(() => {
         const director = mc.getPlayer(vdData.director);
         if (director) {
             clearPlayerCamera(director);
-            mc.runcmdEx(`camera "${director.realName}" set minecraft:first_person`);
-            mc.runcmdEx(`camera "${director.realName}" clear`);
+
         }
         // 清除任务元数据，但保留监控状态（以便玩家上线恢复）
         vdData.task = false;
