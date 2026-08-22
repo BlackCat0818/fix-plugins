@@ -171,6 +171,22 @@ const monitorMap = new Map();        // 监控关系：监控者uuid -> 被监�
  * 清除玩家的相机并恢复其状态（从持久化数据中读取原始位置/游戏模式）
  * @param {Player} player
  */
+function ensurePlayerMonitorState(player, targetPlayer) {
+    if (!player || !targetPlayer) return;
+    const uuid = player.uuid;
+    const data = DATA.get("monitorStates") || {};
+    if (data[uuid]) return;
+
+    const pos = player.pos;
+    data[uuid] = {
+        targetName: targetPlayer.realName,
+        originalPos: { x: pos.x, y: pos.y, z: pos.z, dimid: pos.dimid },
+        originalGameMode: player.gameMode
+    };
+    DATA.set("monitorStates", data);
+    DATA.reload();
+}
+
 function clearPlayerCamera(player) {
     if (!player) return;
     const uuid = player.uuid;
@@ -236,23 +252,13 @@ function enableRightShoulderCam(player, targetPlayer = player, saveOriginal = tr
     monitorMap.delete(uuid);
 
     if (saveOriginal) {
-        // 监控他人时保存原始位置并设为旁观者
+        // 监控他人时保存原始位置并设为旁观者（仅在无记录时保存，防止覆盖）
         if (targetPlayer !== player) {
             if (!targetPlayer) {
                 player.tell("§c目标玩家不在线");
                 return;
             }
-            const pos = player.pos;
-            const originalPos = { x: pos.x, y: pos.y, z: pos.z, dimid: pos.dimid };
-            const originalGameMode = player.gameMode;
-            const data = DATA.get("monitorStates") || {};
-            data[uuid] = {
-                targetName: targetPlayer.realName,
-                originalPos: originalPos,
-                originalGameMode: originalGameMode
-            };
-            DATA.set("monitorStates", data);
-            DATA.reload();
+            ensurePlayerMonitorState(player, targetPlayer);
             player.setGameMode(6);
             monitorMap.set(uuid, targetPlayer.realName);
         }
@@ -428,7 +434,7 @@ const RELOCATE_COOLDOWN = 5000; // 5秒冷却
 /**
  * 导播员传送至目标身后并看向目标（备用函数，可在启动导播前调用）
  */
-function Director(director, target, distance = 10) {
+function placeTempCamera(director, target, distance = 10) {
     if (!director || !target) return false;
     const tPos = target.pos;
     const tDir = target.direction;
@@ -475,6 +481,9 @@ function startDirector(directorName, targetName, keepPos = false) {
     const target = mc.getPlayer(targetName);
     if (!director || !target) return false;
 
+    // 先保存导演的真实起始状态，避免后续临时传送被当作“原始位置”恢复
+    ensurePlayerMonitorState(director, target);
+
     const vdData = DATA.get("CameraDirector") || {};
     vdData.task = true;
     vdData.director = directorName;
@@ -483,7 +492,8 @@ function startDirector(directorName, targetName, keepPos = false) {
     DATA.reload();
 
     // 先传送导播员到目标身后
-    Director(director, target);
+    placeTempCamera(director, target);
+    director.setGameMode(6);
 
     // 清除旧的延迟任务
     if (pendingStartTask) {
@@ -772,7 +782,7 @@ mc.listen("onServerStarted", () => {
         if (dist > 150 || dimChanged) {
             lastRelocateTime = now;
             // 传送导播员到目标身后
-            Director(director, target);
+            placeTempCamera(director, target);
             // 清除相机
             mc.runcmdEx(`camera "${director.realName}" clear`);
             // 清除旧的定时器
@@ -794,6 +804,7 @@ mc.listen("onServerStarted", () => {
                 const dirNow = mc.getPlayer(directorName);
                 const tarNow = mc.getPlayer(targetName);
                 if (dirNow && tarNow) {
+                    // 远距离重定位后，必须保留最初保存的原始状态，不能用临时传送点覆盖它
                     enableRightShoulderCam(dirNow, tarNow, false);
                 } else {
                     stopDirector();
