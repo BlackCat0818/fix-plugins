@@ -221,35 +221,50 @@ function clearPlayerCamera(player) {
  * @param {Player} player 监控者
  * @param {Player} targetPlayer 被监控者（默认为自己）
  */
-function enableRightShoulderCam(player, targetPlayer = player) {
+function enableRightShoulderCam(player, targetPlayer = player, saveOriginal = true) {
     if (!player) return;
     const uuid = player.uuid;
-    // 清除已有监控
-    clearPlayerCamera(player);
+    // 清除已有的定时器和相机（但不恢复位置）
+    if (tickTimers.has(uuid)) {
+        clearInterval(tickTimers.get(uuid));
+        tickTimers.delete(uuid);
+    }
+    mc.runcmdEx(`camera "${player.realName}" set minecraft:first_person`);
+    mc.runcmdEx(`camera "${player.realName}" clear`);
+    player.runcmd(`camera @s clear`);
+    playerCamState.delete(uuid);
+    monitorMap.delete(uuid);
 
-    // 如果目标不是自己，保存原始位置并设为旁观者模式
-    if (targetPlayer !== player) {
-        if (!targetPlayer) {
-            player.tell("§c目标玩家不在线");
-            return;
+    if (saveOriginal) {
+        // 监控他人时保存原始位置并设为旁观者
+        if (targetPlayer !== player) {
+            if (!targetPlayer) {
+                player.tell("§c目标玩家不在线");
+                return;
+            }
+            const pos = player.pos;
+            const originalPos = { x: pos.x, y: pos.y, z: pos.z, dimid: pos.dimid };
+            const originalGameMode = player.gameMode;
+            const data = DATA.get("monitorStates") || {};
+            data[uuid] = {
+                targetName: targetPlayer.realName,
+                originalPos: originalPos,
+                originalGameMode: originalGameMode
+            };
+            DATA.set("monitorStates", data);
+            DATA.reload();
+            player.setGameMode(6);
+            monitorMap.set(uuid, targetPlayer.realName);
         }
-        // 保存原始位置到持久化
-        const pos = player.pos;
-        const originalPos = { x: pos.x, y: pos.y, z: pos.z, dimid: pos.dimid };
-        const originalGameMode = player.gameMode;
-        const data = DATA.get("monitorStates") || {};
-        data[uuid] = {
-            targetName: targetPlayer.realName,
-            originalPos: originalPos,
-            originalGameMode: originalGameMode
-        };
-        DATA.set("monitorStates", data);
-        DATA.reload();
-
-        // 设为旁观者模式
-        player.setGameMode(6);
-        // 记录监控关系（仅用于内存快速判断）
-        monitorMap.set(uuid, targetPlayer.realName);
+    } else {
+        // 不保存新位置，但确保处于旁观者模式（如果已有监控关系则保留）
+        if (player.gameMode !== 6) {
+            player.setGameMode(6);
+        }
+        // 如果目标不是自己且没有监控关系，则建立（但一般重定位时已有）
+        if (targetPlayer !== player && !monitorMap.has(uuid)) {
+            monitorMap.set(uuid, targetPlayer.realName);
+        }
     }
 
     // 获取目标玩家的初始脚部位置和朝向
@@ -259,7 +274,6 @@ function enableRightShoulderCam(player, targetPlayer = player) {
     if (!isValidRot(pRot)) pRot = { pitch: 0, yaw: 0 };
     const eyeHeight = targetPlayer.pos.y - targetPlayer.feetPos.y;
 
-    // 初始化平滑状态
     playerCamState.set(uuid, {
         smoothLoc: { x: footPos.x, y: footPos.y, z: footPos.z },
         smoothRot: { pitch: pRot.pitch, yaw: pRot.yaw },
@@ -269,10 +283,8 @@ function enableRightShoulderCam(player, targetPlayer = player) {
         logCounter: 0
     });
 
-    // 启动定时器（每50ms更新）
     const timerId = setInterval(() => {
         try {
-            // 保护：检查 player 对象和其名称是否有效
             if (!player || typeof player.realName !== 'string' || !player.realName) {
                 if (tickTimers.has(uuid)) {
                     clearInterval(tickTimers.get(uuid));
@@ -284,7 +296,6 @@ function enableRightShoulderCam(player, targetPlayer = player) {
             }
             const pl = mc.getPlayer(player.realName);
             if (!pl) {
-                // 玩家已离线，清理本定时器（但保留持久化数据，以便重进恢复）
                 if (tickTimers.has(uuid)) {
                     clearInterval(tickTimers.get(uuid));
                     tickTimers.delete(uuid);
@@ -300,7 +311,6 @@ function enableRightShoulderCam(player, targetPlayer = player) {
                 return;
             }
 
-            // 获取被监控玩家
             const targetName = monitorMap.get(uuid);
             let targetPl;
             if (targetName) {
@@ -314,7 +324,6 @@ function enableRightShoulderCam(player, targetPlayer = player) {
                 targetPl = pl;
             }
 
-            // 维度同步（监控他人时）
             if (targetPl !== pl && pl.pos.dimid !== targetPl.pos.dimid) {
                 const tpPos = targetPl.feetPos;
                 pl.teleport(tpPos, targetPl.pos.dimid);
@@ -325,7 +334,6 @@ function enableRightShoulderCam(player, targetPlayer = player) {
             const targetRot = targetPl.direction;
             if (!isValidPos(footPos) || !isValidRot(targetRot)) return;
 
-            // 平滑
             state.smoothLoc.x = lerp(state.smoothLoc.x, footPos.x, 0.35);
             state.smoothLoc.y = lerp(state.smoothLoc.y, footPos.y, 0.35);
             state.smoothLoc.z = lerp(state.smoothLoc.z, footPos.z, 0.35);
@@ -333,7 +341,6 @@ function enableRightShoulderCam(player, targetPlayer = player) {
             state.smoothRot.yaw = lerpAngle(state.smoothRot.yaw, targetRot.yaw, 0.25);
             state.smoothRot.pitch = Math.max(-90, Math.min(90, state.smoothRot.pitch));
 
-            // 动态偏移
             const pitchNorm = state.smoothRot.pitch / 90;
             let offsetY = state.eyeHeight + pitchNorm * 1.8;
             offsetY = Math.min(offsetY, state.eyeHeight + 1.4);
@@ -366,7 +373,6 @@ function enableRightShoulderCam(player, targetPlayer = player) {
     }, 50);
 
     tickTimers.set(uuid, timerId);
-    // 提示
     if (targetPlayer === player) {
         player.tell("§a已开启越肩视角");
     } else {
@@ -462,7 +468,6 @@ function Director(director, target, distance = 10) {
  * @returns {boolean}
  */
 function startDirector(directorName, targetName, keepPos = false) {
-    // 如果已有任务，先停止（若 keepPos 为 true，则不清理持久化数据，但导播任务元数据要更新）
     if (DATA.get("CameraDirector").task) {
         stopDirector(!keepPos);
     }
@@ -470,9 +475,6 @@ function startDirector(directorName, targetName, keepPos = false) {
     const target = mc.getPlayer(targetName);
     if (!director || !target) return false;
 
-    // 若是正常启动（keepPos=false），保存原始位置（由 enableRightShoulderCam 完成，但我们也手动存一份导播专用）
-    // 但 enableRightShoulderCam 会保存监控状态，所以不需要额外保存。
-    // 然而导播任务需要知道导演名和目标名，以及任务活跃标志。
     const vdData = DATA.get("CameraDirector") || {};
     vdData.task = true;
     vdData.director = directorName;
@@ -480,40 +482,24 @@ function startDirector(directorName, targetName, keepPos = false) {
     DATA.set("CameraDirector", vdData);
     DATA.reload();
 
-    // 调用越肩视角（这会自动保存导演的原始位置并设为旁观者）
-    enableRightShoulderCam(director, target);
+    // 先传送导播员到目标身后
+    Director(director, target);
 
-    // 取消之前的延迟启动任务
+    // 清除旧的延迟任务
     if (pendingStartTask) {
         clearInterval(pendingStartTask);
         pendingStartTask = null;
     }
 
-    // 延迟 3 秒后正式启用相机（等待传送完成）
+    // 延迟 3 秒后启动越肩视角（保存原始位置）
     pendingStartTask = setTimeout(() => {
         pendingStartTask = null;
         const vd = DATA.get("CameraDirector") || {};
-        if (!vd.task || vd.director !== directorName || vd.directedPlayer !== targetName) {
-            return;
-        }
+        if (!vd.task || vd.director !== directorName || vd.directedPlayer !== targetName) return;
         const dirNow = mc.getPlayer(directorName);
         const tarNow = mc.getPlayer(targetName);
         if (dirNow && tarNow) {
-            // 再次调用 enableRightShoulderCam 以确保相机生效（但会重置状态，可能丢失平滑，但可以）
-            // 更优做法：直接启用相机，但 enableRightShoulderCam 会清除旧状态再设新，可能导致闪烁。
-            // 我们可以在 director 已处于监控状态时，直接重启定时器？但为简化，重新调用
-            // 但由于 enableRightShoulderCam 会清除监控状态（包括保留位置），所以我们要小心，
-            // 可以只重新设置相机而不重置位置？为了简化，我们还是重新调用，但传 keepPos 为 true 避免重置位置？
-            // 不过 enableRightShoulderCam 没有 keepPos 参数，它会清除并保存新状态。
-            // 但 director 已经处于监控状态（因为调用了 enableRightShoulderCam），所以这里再调用会清除并重新开始，可能导致位置丢失。
-            // 改为：直接检查是否有定时器，如果没有则重新开启。
-            if (!tickTimers.has(director.uuid)) {
-                // 确保监控状态存在
-                enableRightShoulderCam(dirNow, tarNow);
-            } else {
-                // 已有定时器，但可能因重定位被清除，我们重新启动定时器？但保持现有。
-                // 不操作
-            }
+            enableRightShoulderCam(dirNow, tarNow, true);
         } else {
             stopDirector();
         }
@@ -783,12 +769,36 @@ mc.listen("onServerStarted", () => {
             (director.pos.z - target.pos.z) ** 2
         );
         const dimChanged = director.pos.dimid !== target.pos.dimid;
-        if (dist > 96 || dimChanged) {
+        if (dist > 150 || dimChanged) {
             lastRelocateTime = now;
-            // 清除相机（防止闪烁）
+            // 传送导播员到目标身后
+            Director(director, target);
+            // 清除相机
             mc.runcmdEx(`camera "${director.realName}" clear`);
-            // 重新启动导播，保留原始位置（keepPos=true）
-            startDirector(directorName, targetName, true);
+            // 清除旧的定时器
+            if (tickTimers.has(director.uuid)) {
+                clearInterval(tickTimers.get(director.uuid));
+                tickTimers.delete(director.uuid);
+            }
+            playerCamState.delete(director.uuid);
+            // 清除旧的延迟任务
+            if (pendingStartTask) {
+                clearInterval(pendingStartTask);
+                pendingStartTask = null;
+            }
+            // 延迟 3 秒后重新启动越肩视角（不保存新位置）
+            pendingStartTask = setTimeout(() => {
+                pendingStartTask = null;
+                const vd = DATA.get("CameraDirector") || {};
+                if (!vd.task || vd.director !== directorName || vd.directedPlayer !== targetName) return;
+                const dirNow = mc.getPlayer(directorName);
+                const tarNow = mc.getPlayer(targetName);
+                if (dirNow && tarNow) {
+                    enableRightShoulderCam(dirNow, tarNow, false);
+                } else {
+                    stopDirector();
+                }
+            }, 3000);
         }
     }, 5000);
 
