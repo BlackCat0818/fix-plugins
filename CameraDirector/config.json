@@ -1,3 +1,7 @@
 {
-    "director": "YuFeng9059"
+    "director": "YuFeng9059",
+    "cameraDistance": 2.5,
+    "cameraSideOffset": -2.0,
+    "cameraHeightOffset": 0.0,
+    "directorDistance": 10
 }

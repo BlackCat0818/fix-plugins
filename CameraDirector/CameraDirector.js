@@ -13,7 +13,7 @@
 
 // ==================== 插件基本信息 ====================
 const PLUGIN_NAME = "CameraDirector";
-const PLUGIN_VERSION = [0, 9, 4, Version.Beta];
+const PLUGIN_VERSION = [0, 9, 5, Version.Beta];
 const PLUGIN_PATH = `./plugins/${PLUGIN_NAME}/`;
 const CONFIG_PATH = `${PLUGIN_PATH}config.json`;
 const DATA_PATH = `${PLUGIN_PATH}data.json`;
@@ -27,7 +27,13 @@ ll.registerPlugin(
 
 // ==================== 配置文件 ====================
 const CONFIG = new JsonConfigFile(CONFIG_PATH, JSON.stringify(
-    { "director": "YuFeng9059" },  // 默认导播员（控制台调用时使用）
+    {
+        "director": "YuFeng9059",
+        "cameraDistance": 2.5,      // 镜头前后距离（值越大越远，建议范围 1.0 ~ 5.0）
+        "cameraSideOffset": 0.8,    // 镜头左右偏移（正=右侧，负=左侧）
+        "cameraHeightOffset": 0.0,      // 镜头高度偏移（正=升高，负=降低）
+        "directorDistance": 10      // （可选）导播员传送至目标身后的距离
+    },
     null, 4
 ));
 
@@ -224,6 +230,8 @@ function clearPlayerCamera(player) {
         delete data[uuid];
         DATA.set("monitorStates", data);
         DATA.reload();
+
+
     }
 
     // 延迟执行相机清除（等待传送和模式更改完成）
@@ -279,6 +287,11 @@ function enableRightShoulderCam(player, targetPlayer = player, saveOriginal = tr
         }
     }
 
+    // 从配置读取镜头距离和侧偏移
+    const dist = CONFIG.get("cameraDistance") || 2.5;
+    const side = CONFIG.get("cameraSideOffset") || 0.8;
+    const heightOffset = CONFIG.get("cameraHeightOffset") || 0;
+
     // 获取目标玩家的初始脚部位置和朝向
     let footPos = targetPlayer.feetPos;
     let pRot = targetPlayer.direction;
@@ -289,9 +302,10 @@ function enableRightShoulderCam(player, targetPlayer = player, saveOriginal = tr
     playerCamState.set(uuid, {
         smoothLoc: { x: footPos.x, y: footPos.y, z: footPos.z },
         smoothRot: { pitch: pRot.pitch, yaw: pRot.yaw },
-        baseX: -0.8,
-        baseZ: -1.5,
+        baseX: side,          // 侧向偏移（可正可负）
+        baseZ: -dist,         // 前后偏移（负值表示身后）
         eyeHeight: eyeHeight,
+        heightOffset: heightOffset,  // 保存以备定时器使用
         logCounter: 0
     });
 
@@ -353,13 +367,17 @@ function enableRightShoulderCam(player, targetPlayer = player, saveOriginal = tr
             state.smoothRot.yaw = lerpAngle(state.smoothRot.yaw, targetRot.yaw, 0.25);
             state.smoothRot.pitch = Math.max(-90, Math.min(90, state.smoothRot.pitch));
 
+            // 动态偏移（基于俯仰角）
             const pitchNorm = state.smoothRot.pitch / 90;
             let offsetY = state.eyeHeight + pitchNorm * 1.8;
             offsetY = Math.min(offsetY, state.eyeHeight + 1.4);
             if (player.isSwimming || player.isCrawling) {
                 offsetY = 0.5;
             }
+            offsetY += (state.heightOffset || 0); // 使用保存的高度偏移
+
             const offsetZ = state.baseZ + Math.abs(pitchNorm) * 0.9;
+
             const offset = getLocalOffset(state.smoothRot.yaw, state.baseX, offsetY, offsetZ);
             const camPos = {
                 x: state.smoothLoc.x + offset.x,
@@ -634,9 +652,9 @@ function restorePlayerOnJoin(player) {
             } catch (e) { }
         }
         // 清除相机（可能还残留）
-        mc.runcmdEx(`camera "${player.realName}" set minecraft:first_person`);
+        //mc.runcmdEx(`camera "${player.realName}" set minecraft:first_person`);
         mc.runcmdEx(`camera "${player.realName}" clear`);
-        player.runcmd(`camera @s clear`);
+        //player.runcmd(`camera @s clear`);
         // 删除记录
         delete data[uuid];
         DATA.set("monitorStates", data);
@@ -874,7 +892,8 @@ ll.onUnload(() => {
         const director = mc.getPlayer(vdData.director);
         if (director) {
             clearPlayerCamera(director);
-
+            //mc.runcmdEx(`camera "${director.realName}" set minecraft:first_person`);
+            mc.runcmdEx(`camera "${director.realName}" clear`);
         }
         // 清除任务元数据，但保留监控状态（以便玩家上线恢复）
         vdData.task = false;
