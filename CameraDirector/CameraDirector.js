@@ -13,7 +13,7 @@
 
 // ==================== 插件基本信息 ====================
 const PLUGIN_NAME = "CameraDirector";
-const PLUGIN_VERSION = [0, 9, 2, Version.Beta];
+const PLUGIN_VERSION = [0, 9, 3, Version.Beta];
 const PLUGIN_PATH = `./plugins/${PLUGIN_NAME}/`;
 const CONFIG_PATH = `${PLUGIN_PATH}config.json`;
 const DATA_PATH = `${PLUGIN_PATH}data.json`;
